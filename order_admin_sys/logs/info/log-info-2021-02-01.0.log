@@ -1,0 +1,68 @@
+2021-02-01 09:39:54.250 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - Starting OrderAdminSysApplication using Java 1.8.0_221 on DESKTOP-CCETMSE with PID 14696 (D:\javaPro\order_admin_sys\target\classes started by LZW in D:\javaPro\order_admin_sys)
+2021-02-01 09:39:54.300 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - No active profile set, falling back to default profiles: default
+2021-02-01 09:39:58.870 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2021-02-01 09:39:58.890 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2021-02-01 09:39:58.900 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-01 09:39:58.900 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 09:39:59.300 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-01 09:39:59.300 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4490 ms
+2021-02-01 09:40:01.060 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 09:40:01.690 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2021-02-01 09:40:01.940 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2021-02-01 09:40:01.983 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - Started OrderAdminSysApplication in 10.998 seconds (JVM running for 18.848)
+2021-02-01 09:40:40.208 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 09:40:40.212 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-01 09:40:40.217 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2021-02-01 09:40:40.380 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-01 09:40:41.395 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-01 20:57:34.545 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - Starting OrderAdminSysApplication using Java 1.8.0_221 on DESKTOP-CCETMSE with PID 9932 (D:\javaPro\order_admin_sys\target\classes started by LZW in D:\javaPro\order_admin_sys)
+2021-02-01 20:57:34.563 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - No active profile set, falling back to default profiles: default
+2021-02-01 20:57:39.921 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2021-02-01 20:57:39.961 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2021-02-01 20:57:39.965 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-01 20:57:39.966 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 20:57:40.362 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-01 20:57:40.363 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5480 ms
+2021-02-01 20:57:42.327 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 20:57:43.096 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2021-02-01 20:57:43.394 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2021-02-01 20:57:43.436 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - Started OrderAdminSysApplication in 13.257 seconds (JVM running for 28.121)
+2021-02-01 21:15:57.197 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 21:15:57.200 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-01 21:15:57.205 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2021-02-01 21:15:57.566 [http-nio-8088-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-01 21:15:58.663 [http-nio-8088-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-01 23:06:48.405 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - Starting OrderAdminSysApplication using Java 1.8.0_221 on DESKTOP-CCETMSE with PID 1284 (D:\javaPro\order_admin_sys\target\classes started by LZW in D:\javaPro\order_admin_sys)
+2021-02-01 23:06:48.419 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - No active profile set, falling back to default profiles: default
+2021-02-01 23:06:53.644 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2021-02-01 23:06:53.677 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2021-02-01 23:06:53.679 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-01 23:06:53.680 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 23:06:54.027 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-01 23:06:54.027 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5031 ms
+2021-02-01 23:06:55.554 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 23:06:56.152 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2021-02-01 23:06:56.353 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2021-02-01 23:06:56.401 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - Started OrderAdminSysApplication in 12.072 seconds (JVM running for 18.577)
+2021-02-01 23:08:32.127 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 23:08:32.133 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-01 23:08:32.139 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2021-02-01 23:08:32.327 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-01 23:08:33.223 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-01 23:09:42.988 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - Starting OrderAdminSysApplication using Java 1.8.0_221 on DESKTOP-CCETMSE with PID 13852 (D:\javaPro\order_admin_sys\target\classes started by LZW in D:\javaPro\order_admin_sys)
+2021-02-01 23:09:43.008 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - No active profile set, falling back to default profiles: default
+2021-02-01 23:09:49.588 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2021-02-01 23:09:49.627 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2021-02-01 23:09:49.630 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-01 23:09:49.631 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 23:09:50.116 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-01 23:09:50.117 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6639 ms
+2021-02-01 23:09:52.273 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 23:09:53.405 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2021-02-01 23:09:53.667 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2021-02-01 23:09:53.762 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - Started OrderAdminSysApplication in 15.207 seconds (JVM running for 25.192)
+2021-02-01 23:10:09.240 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-01 23:10:09.242 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-01 23:10:09.246 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-02-01 23:10:09.401 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-01 23:10:10.188 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

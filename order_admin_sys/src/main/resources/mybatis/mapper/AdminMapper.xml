@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzw.order_admin_sys.mapper.AdminMapper">
+
+    <resultMap id="BaseResultMap" type="com.lzw.order_admin_sys.entity.Admin">
+        <id column="aid" jdbcType="INTEGER" property="aid"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        aid,username,password
+     </sql>
+
+
+    <!--查询用户-->
+    <select id="queryAdmin" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from admin_info
+        where username = #{username}
+        and password = #{password}
+    </select>
+
+    <!--查询用户名-->
+    <select id="queryAdminName" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from admin_info
+        where username = #{username}
+    </select>
+
+    <!--    向数据库写入数据-->
+    <insert id="insertAdmin" parameterType="com.lzw.order_admin_sys.entity.Admin">
+        insert into admin_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="username != null">
+                username,
+            </if>
+            <if test="password != null">
+                password,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="username != null">
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                #{password,jdbcType=VARCHAR},
+            </if>
+
+        </trim>
+    </insert>
+
+
+</mapper>

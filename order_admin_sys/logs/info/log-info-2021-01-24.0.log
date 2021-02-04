@@ -1,0 +1,17 @@
+2021-01-24 09:51:54.314 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - Starting OrderAdminSysApplication using Java 1.8.0_221 on DESKTOP-CCETMSE with PID 13140 (D:\javaPro\order_admin_sys\target\classes started by LZW in D:\javaPro\order_admin_sys)
+2021-01-24 09:51:54.391 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - No active profile set, falling back to default profiles: default
+2021-01-24 09:52:02.910 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2021-01-24 09:52:02.943 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2021-01-24 09:52:02.947 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-24 09:52:02.949 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-24 09:52:03.451 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-24 09:52:03.452 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8753 ms
+2021-01-24 09:52:07.246 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-24 09:52:08.471 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2021-01-24 09:52:08.604 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2021-01-24 09:52:08.682 [main] INFO  com.lzw.order_admin_sys.OrderAdminSysApplication - Started OrderAdminSysApplication in 18.016 seconds (JVM running for 27.065)
+2021-01-24 10:20:47.329 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-24 10:20:47.334 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-24 10:20:47.341 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-01-24 10:20:47.709 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-24 10:20:48.689 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lzw.order_admin_sys.mapper.OrderInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.lzw.order_admin_sys.entity.OrderInfo">
+        <id column="oid" jdbcType="VARCHAR" property="oid"/>
+        <result column="user" jdbcType="VARCHAR" property="user"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="sex" jdbcType="VARCHAR" property="sex"/>
+        <result column="age" jdbcType="INTEGER" property="age"/>
+        <result column="type" jdbcType="VARCHAR" property="type"/>
+        <result column="order_time" jdbcType="VARCHAR" property="order_time"/>
+        <result column="detail" jdbcType="VARCHAR" property="detail"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        oid,user,name,sex,age,type,order_time,detail
+     </sql>
+
+    <!--查询用户信息-->
+    <select id="queryOrderInfo" parameterType="com.lzw.order_admin_sys.entity.OrderInfo"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from order_info
+    </select>
+
+    <!--    插入用户预约信息-->
+    <insert id="insertSelective" parameterType="com.lzw.order_admin_sys.entity.OrderInfo">
+        insert into order_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="oid != null">
+                oid,
+            </if>
+            <if test="user != null">
+                user,
+            </if>
+            <if test="name != null">
+                name,
+            </if>
+            <if test="sex != null">
+                sex,
+            </if>
+            <if test="age != null">
+                age,
+            </if>
+            <if test="type != null">
+                type,
+            </if>
+            <if test="order_time != null">
+                order_time,
+            </if>
+            <if test="detail != null">
+                detail,
+            </if>
+
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="oid != null">
+                #{oid,jdbcType=VARCHAR},
+            </if>
+            <if test="user != null">
+                #{user,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null">
+                #{sex,jdbcType=VARCHAR},
+            </if>
+            <if test="age != null">
+                #{age,jdbcType=INTEGER},
+            </if>
+            <if test="type != null">
+                #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="order_time != null">
+                #{order_time,jdbcType=VARCHAR},
+            </if>
+            <if test="detail != null">
+                #{detail,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+
+    <!--   更新student表-->
+    <update id="updateOrderInfo" parameterType="com.lzw.order_admin_sys.entity.OrderInfo">
+        update order_info
+        <set>
+            <if test="oid != null">
+                oid = #{oid,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null">
+                sex = #{sex,jdbcType=VARCHAR},
+            </if>
+            <if test="age != null">
+                age = #{age,jdbcType=INTEGER},
+            </if>
+            <if test="type != null">
+                #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="order_time != null">
+                #{order_time,jdbcType=VARCHAR},
+            </if>
+            <if test="detail != null">
+                #{detail,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where oid = #{oid,jdbcType=VARCHAR}
+        and user = #{user,jdbcType= VARCHAR}
+    </update>
+
+
+
+
+    <!--删除数据中的数据-->
+    <delete id="deleteOrderInfo" parameterType="com.lzw.order_admin_sys.entity.OrderInfo">
+        delete from order_info
+        where oid = #{oid,jdbcType=VARCHAR}
+        and user = #{user,jdbcType= VARCHAR}
+     </delete>
+
+</mapper>

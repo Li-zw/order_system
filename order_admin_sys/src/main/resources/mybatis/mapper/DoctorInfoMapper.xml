@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lzw.order_admin_sys.mapper.DoctorInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.lzw.order_admin_sys.entity.DoctorInfo">
+        <id column="dno" jdbcType="VARCHAR" property="dno"/>
+        <result column="dept" jdbcType="VARCHAR" property="dept"/>
+        <result column="type" jdbcType="VARCHAR" property="type"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+
+    </resultMap>
+
+    <sql id="Base_Column_List">
+      dno,dept,type,name
+     </sql>
+
+    <!--查询医生信息-->
+    <select id="getDoctorInfo" parameterType="com.lzw.order_admin_sys.entity.DoctorInfo"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from doctor_info
+
+    </select>
+
+    <select id="getMsg" parameterType="com.lzw.order_admin_sys.entity.DoctorInfo"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from doctor_info
+
+    </select>
+
+
+</mapper>
