@@ -35,4 +35,11 @@ public class DoctorInfoController {
         return (List) OrderInfoResult.bulidFailResult(doctorInfoMapper.getMsg());
     }
 
+
+    @RequestMapping("queryDoctMsg")
+    public OrderInfoResult<List<DoctorInfo>> queryDoct(String dept) {
+        System.out.println(dept);
+        return OrderInfoResult.bulidSuccesResult(doctorInfoMapper.getDoctorInfoByDept(dept));
+    }
+
 }

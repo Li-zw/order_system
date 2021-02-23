@@ -7,4 +7,5 @@ import java.util.List;
 public interface DoctorInfoMapper {
     List<DoctorInfo> getDoctorInfo();
     List getMsg();
+    List<DoctorInfo> getDoctorInfoByDept(String dept);
 }

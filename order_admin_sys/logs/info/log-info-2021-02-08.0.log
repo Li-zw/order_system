@@ -1,0 +1,10 @@
+2021-02-08 22:06:26.926 [main] INFO  c.l.order_admin_sys.OrderAdminSysApplicationTests - Starting OrderAdminSysApplicationTests using Java 1.8.0_221 on DESKTOP-CCETMSE with PID 11180 (started by LZW in D:\javaPro\order_admin_sys)
+2021-02-08 22:06:26.990 [main] INFO  c.l.order_admin_sys.OrderAdminSysApplicationTests - No active profile set, falling back to default profiles: default
+2021-02-08 22:06:49.877 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 22:06:53.570 [main] INFO  c.l.order_admin_sys.OrderAdminSysApplicationTests - Started OrderAdminSysApplicationTests in 29.76 seconds (JVM running for 38.33)
+2021-02-08 22:06:55.452 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-08 22:23:24.763 [main] INFO  c.l.order_admin_sys.OrderAdminSysApplicationTests - Starting OrderAdminSysApplicationTests using Java 1.8.0_221 on DESKTOP-CCETMSE with PID 15476 (started by LZW in D:\javaPro\order_admin_sys)
+2021-02-08 22:23:24.778 [main] INFO  c.l.order_admin_sys.OrderAdminSysApplicationTests - No active profile set, falling back to default profiles: default
+2021-02-08 22:23:38.403 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 22:23:43.188 [main] INFO  c.l.order_admin_sys.OrderAdminSysApplicationTests - Started OrderAdminSysApplicationTests in 20.924 seconds (JVM running for 26.516)
+2021-02-08 22:23:45.401 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

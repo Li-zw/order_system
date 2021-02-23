@@ -30,4 +30,11 @@
     </select>
 
 
+    <select id="getDoctorInfoByDept" resultType="com.lzw.order_admin_sys.entity.DoctorInfo">
+        select
+        <include refid="Base_Column_List"/>
+        from doctor_info
+        where dept = #{dept,jdbcType=VARCHAR}
+    </select>
+
 </mapper>
