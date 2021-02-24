@@ -12,9 +12,18 @@ package com.lzw.order_admin_sys.entity;
 public class DoctorInfo {
     private String dno;
     private String dept;
+    private String dname;
     private String type;
     private String name;
 
+
+    public String getDname() {
+        return dname;
+    }
+
+    public void setDname(String dname) {
+        this.dname = dname;
+    }
 
     public String getDno() {
         return dno;

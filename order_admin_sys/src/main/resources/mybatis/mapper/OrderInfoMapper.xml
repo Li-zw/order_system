@@ -8,13 +8,14 @@
         <result column="name" jdbcType="VARCHAR" property="name"/>
         <result column="sex" jdbcType="VARCHAR" property="sex"/>
         <result column="age" jdbcType="INTEGER" property="age"/>
+        <result column="dept" jdbcType="VARCHAR" property="type"/>
         <result column="type" jdbcType="VARCHAR" property="type"/>
         <result column="order_time" jdbcType="VARCHAR" property="order_time"/>
         <result column="detail" jdbcType="VARCHAR" property="detail"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        oid,user,name,sex,age,type,order_time,detail
+        oid,user,name,sex,age,dept,type,order_time,detail
      </sql>
 
     <!--查询用户信息-->
@@ -43,6 +44,9 @@
             <if test="age != null">
                 age,
             </if>
+            <if test="dept != null">
+                dept,
+            </if>
             <if test="type != null">
                 type,
             </if>
@@ -69,6 +73,9 @@
             </if>
             <if test="age != null">
                 #{age,jdbcType=INTEGER},
+            </if>
+            <if test="dept != null">
+                #{dept,jdbcType=VARCHAR},
             </if>
             <if test="type != null">
                 #{type,jdbcType=VARCHAR},
@@ -98,6 +105,9 @@
             </if>
             <if test="age != null">
                 age = #{age,jdbcType=INTEGER},
+            </if>
+            <if test="dept != null">
+                #{dept,jdbcType=VARCHAR},
             </if>
             <if test="type != null">
                 #{type,jdbcType=VARCHAR},

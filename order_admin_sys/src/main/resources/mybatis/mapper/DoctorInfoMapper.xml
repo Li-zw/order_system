@@ -7,11 +7,12 @@
         <result column="dept" jdbcType="VARCHAR" property="dept"/>
         <result column="type" jdbcType="VARCHAR" property="type"/>
         <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="dname" jdbcType="VARCHAR" property="dname"/>
 
     </resultMap>
 
     <sql id="Base_Column_List">
-      dno,dept,type,name
+      dno,dept,type,name,dname
      </sql>
 
     <!--查询医生信息-->

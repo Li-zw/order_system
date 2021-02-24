@@ -36,9 +36,8 @@ public class DoctorInfoController {
     }
 
 
-    @RequestMapping("queryDoctMsg")
+    @RequestMapping("getDoctorInfoByDept")
     public OrderInfoResult<List<DoctorInfo>> queryDoct(String dept) {
-        System.out.println(dept);
         return OrderInfoResult.bulidSuccesResult(doctorInfoMapper.getDoctorInfoByDept(dept));
     }
 

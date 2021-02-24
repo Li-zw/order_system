@@ -19,6 +19,7 @@ public class OrderInfo {
     private String name;
     private String sex;
     private int age;
+    private String dept;
     private String type;
     private String order_time;
     private String detail;
@@ -27,11 +28,12 @@ public class OrderInfo {
 
     }
 
-    public OrderInfo(String user,String name, String sex, int age, String type, String order_time, String detail) {
+    public OrderInfo(String user,String name, String sex, int age, String dept,String type, String order_time, String detail) {
         this.user = user;
         this.name = name;
         this.sex = sex;
         this.age = age;
+        this.dept = dept;
         this.type = type;
         this.order_time = order_time;
         this.detail = detail;
@@ -53,6 +55,7 @@ public class OrderInfo {
         return rs_id;
     }
 
+
     @Override
     public String toString() {
         return "OrderInfo{" +
@@ -61,10 +64,19 @@ public class OrderInfo {
                 ", name='" + name + '\'' +
                 ", sex='" + sex + '\'' +
                 ", age=" + age +
+                ", dept='" + dept + '\'' +
                 ", type='" + type + '\'' +
                 ", order_time='" + order_time + '\'' +
                 ", detail='" + detail + '\'' +
                 '}';
+    }
+
+    public String getDept() {
+        return dept;
+    }
+
+    public void setDept(String dept) {
+        this.dept = dept;
     }
 
     public String getOid() {
