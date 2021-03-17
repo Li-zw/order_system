@@ -1,6 +1,5 @@
 package com.lzw.order_admin_sys.controller;
 
-import com.lzw.order_admin_sys.entity.DoctorInfo;
 import com.lzw.order_admin_sys.entity.OrderInfo;
 import com.lzw.order_admin_sys.entity.OrderInfoResult;
 import com.lzw.order_admin_sys.mapper.OrderInfoMapper;
@@ -33,11 +32,16 @@ public class OrderInfoController {
      *
      * @return
      */
+    @RequestMapping("queryInfoByUser")
+    public OrderInfoResult<List<OrderInfo>> queryInfo(String user) {
+        return OrderInfoResult.bulidSuccesResult(orderInfoMapper.queryOrderInfoByUser(user));
+    }
+
+
     @RequestMapping("queryInfo")
     public OrderInfoResult<List<OrderInfo>> getInfo() {
         return OrderInfoResult.bulidSuccesResult(orderInfoMapper.queryOrderInfo());
     }
-
 
 
     /**
@@ -60,16 +64,22 @@ public class OrderInfoController {
     }
 
 
+    @RequestMapping("queryMsg")
+    public OrderInfoResult<List<OrderInfo>> queryMsg(String params){
+        return OrderInfoResult.bulidSuccesResult(orderInfoMapper.queryOrderInfoByFactor(params));
+    }
+
+
     /**
      * 取消预约功能
      *
-     * @param ipt_orderInfo
+     * @param oid
      * @return
      */
     @RequestMapping("cancel")
-    public OrderInfoResult<Boolean> cancelOrder(@RequestBody OrderInfo ipt_orderInfo) {
+    public OrderInfoResult<Boolean> cancelOrder(String oid) {
         boolean isSuccess;
-        isSuccess = orderInfoMapper.deleteOrderInfo(ipt_orderInfo);
+        isSuccess = orderInfoMapper.deleteOrderInfo(oid);
         if (isSuccess) {
             return OrderInfoResult.bulidSuccesResult(isSuccess);
         } else {
@@ -86,7 +96,7 @@ public class OrderInfoController {
     @RequestMapping("update")
     public OrderInfoResult<Boolean> updateOrder(@RequestBody OrderInfo ipt_orderInfo) {
         boolean isSuccess;
-        isSuccess = orderInfoMapper.deleteOrderInfo(ipt_orderInfo);
+        isSuccess = orderInfoMapper.updateOrderInfo(ipt_orderInfo);
         if (isSuccess) {
             return OrderInfoResult.bulidSuccesResult(isSuccess);
         } else {
